@@ -1,8 +1,8 @@
 from rest_framework import serializers
 
-from .models import Hero
+from .models import Covid
 
-class HeroSerializer(serializers.HyperlinkedModelSerializer):
+class CovidSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Hero
-        fields = ('name', 'alias')
+        model = Covid
+        fields = ('name', 'reportedCases')

@@ -56,7 +56,7 @@ ROOT_URLCONF = 'covidassessment.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [], #os.path.join (BASE_DIR, 'template')joins the base diecto with template folde
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Nigeria/Lagos'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
